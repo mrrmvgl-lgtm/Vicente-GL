@@ -1,0 +1,39 @@
+*{
+	font-size: 1.0em;	/* se hace el texto más pequeño */
+}
+
+header, nav, main div, footer{
+	margin-left: 5px;	/* se reduce el margen exterior*/
+	margin-right: 5px;
+}
+
+#icono{
+	width: 60px;	/* el logo se hace más pequeño */
+}
+
+nav a:active{
+	text-shadow: 3px;
+	background-color: rosybrown;
+	transition: 0.2s;
+}
+
+.hide{
+	display: none;
+}
+
+main .flex-container>*{
+	min-width: 250px;	/* reducimos las medidas de flex-container */
+	max-width: 400px;
+}
+
+aside{
+	min-width: 130px;	/*	Tenemos que poner una dimensión mínima para que no se separe */
+}
+
+#mapa{
+	width: 90%;
+}
+
+fieldset{
+	min-width: 270px;
+}
