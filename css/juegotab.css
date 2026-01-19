@@ -1,0 +1,33 @@
+*{
+	font-size: 1.0em;	/* cambiamos el tamaño de la letra */
+}
+
+nav a:active{
+	text-shadow: 3px;
+	background-color: rosybrown;
+	transition: 0.2s;
+}
+.right_f{
+	width: 100px;
+}
+
+#icono{
+	width: 100px;	/* cambiamos tamaño del icono */
+}
+
+#isearch{
+	background-color: darkred;
+	max-width: 120px;
+	font-size: 1.2em;
+}
+#botosub{
+	font-size: 1.2em;
+}
+
+.partida img{
+	transform: scale(80%);
+}
+
+.tabla{
+	min-width: 120px;
+}
