@@ -2,6 +2,13 @@
 	font-size: 1.0em;	/* cambiamos el tamaño de la letra */
 }
 
+header, nav, main div, footer{
+	margin-left: 5px;
+	margin-top: 5px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+}
+
 nav a:active{
 	text-shadow: 3px;
 	background-color: rosybrown;
@@ -9,6 +16,10 @@ nav a:active{
 }
 .right_f{
 	width: 100px;
+}
+
+main .flex-container>*{
+	max-width: 200px;
 }
 
 #icono{
@@ -24,10 +35,15 @@ nav a:active{
 	font-size: 1.2em;
 }
 
-.partida img{
-	transform: scale(80%);
-}
-
 .tabla{
 	min-width: 120px;
+}
+
+#playerChoice, #cpuChoice{
+	width: 150px;
+	height: 150px;
+}
+
+img#bp, img#bs, img#bt{
+	width: 50%;
 }

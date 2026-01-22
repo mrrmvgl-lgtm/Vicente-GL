@@ -5,6 +5,8 @@
 header, nav, main div, footer{
 	margin-left: 5px;	/* se reduce el margen exterior*/
 	margin-right: 5px;
+	margin-top: 0px;
+	margin-bottom: 0px;
 }
 
 #icono{
@@ -36,4 +38,17 @@ aside{
 
 fieldset{
 	min-width: 270px;
+}
+
+main .flex-container2>*{
+	max-width: 100px;
+}
+
+img#bp, img#bs, img#bt{
+	width: 70%;
+}
+
+#cpuChoice, #playerChoice{
+	width: 100px;
+	height: 100px;
 }

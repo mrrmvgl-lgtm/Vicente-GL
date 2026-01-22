@@ -11,6 +11,8 @@
     <link rel="stylesheet" type="text/css" media="screen and (max-width: 500px)" href="css/juegotel.css">
     <link rel="icon" href="images/juego.webp" type="images/webp" sizes="16x16">  
     <script src="javas/juego.js"></script>
+    <script src="clase/Linea.js"></script>
+    
 </head>
 <body class="home">
     <header> <!-- Common to all pages -->
@@ -38,13 +40,13 @@
                 </div>
                 <div id="contenedor" class="right_f">
                     <b><label id="questionName">Player</label></b>
-                    <input id="player_name" type="text" class="centrado" maxlength="10" required pattern="[a-zA-Z]" placeholder="your name" value="anonimus">
+                    <input id="player_name" type="text" class="centrado" maxlength="10" required pattern="^[a-zA-Z]+$" placeholder="your name">
                     <input id="botonsub" type="submit" class="boton" value="Submit" onclick="register_name(player_name)">
                 </div>            
         </nav>
         
         <div class="flex-container">
-            <div class="flex2 juego">
+            <div class="flex3 juego">
                 <img id="cpuChoice" src="images/cpu.png" alt="Piedra" class="machineColor" width="256" height="256">
                 <figcaption>Machine bet</figcaption>
             </div>
@@ -52,20 +54,22 @@
              <div class="tabla">
                 <h2>Results</h2>
                 <hr>
-                <p>Bets :   <output id="outBets" name="Bets">0</output></p>
-                <p>Won :    <output id="outWon" name="Won">0</output></p>
-                <p>Losses : <output id="outLosses" name="Losses">0</output></p>
-                <p>Draw :   <output id="outDraw" name="Draw">0</output></p>
+                <p class="hide">Bets :   <output id="outBets" name="Bets">0</output></p>
+                <p class="hide">Won :    <output id="outWon" name="Won">0</output></p>
+                <p class="hide">Losses : <output id="outLosses" name="Losses">0</output></p>
+                <p class="hide">Draw :   <output id="outDraw" name="Draw">0</output></p>
+                <canvas id="playerChart" style="width:100%; max-width:700px"></canvas>
+                <p id="leyenda">P#1 . P#2 . P#3 . P#4 . P#5</p>
              </div>
             </div>
-            <div class="flex2 juego">
+            <div class="flex3 juego">
                 <img id="playerChoice" src="images/player.webp" alt="Papel" class="playerColor" width="256" height="256">
                 <figcaption>Player bet</figcaption>
             </div>
         
         </div>
 
-        <div class="flex-container partida">
+        <div class="flex-container2 partida">
             <div class="flex2 juego">
                 <img id="bs" class="select" src="images/piedra.jpg" alt="Piedra" width="200" 
                 onclick="oneselect(2)"
